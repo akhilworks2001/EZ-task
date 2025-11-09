@@ -1,0 +1,156 @@
+.team-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background: url("/home/BG.png") no-repeat center center/cover;
+}
+
+.team-content {
+  display: flex;
+  gap: 2rem;
+  min-height: 100vh;
+}
+
+.note {
+  height: 24rem;
+  position: relative;
+  z-index: 1000;
+}
+
+.ind-container {
+  height: 20rem;
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+}
+
+.group-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.group {
+  height: 18rem;
+  margin-top: 15rem;
+}
+
+.bottom-container {
+  position: absolute;
+  left: 50rem;
+  top: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-text {
+  margin-right: 10rem;
+}
+
+.bottom-arrow {
+  height: 5rem;
+}
+
+.left-container {
+  position: absolute;
+  right: 10rem;
+  top: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-text {
+  margin-left: 4rem;
+}
+
+
+.left-arrow {
+  height: 6rem;
+}
+
+.right-container {
+  position: absolute;
+  left: 37rem;
+  top: 21rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-text {
+  margin-right: 4rem;
+}
+
+
+.right-arrow {
+  height: 8rem;
+}
+
+.portfolio-btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  background-color: tomato;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .note {
+    height: 20rem;
+    margin-left: 9rem;
+  }
+
+  .ind-container {
+    height: 16rem;
+  }
+
+  .group {
+    height: 12rem;
+    margin-right: 5rem;
+  }
+
+  .right-container {
+    top: 19rem;
+    left: 26rem;
+  }
+
+  .right-arrow {
+    height: 6rem;
+  }
+
+  .left-container {
+    top: 12rem;
+    right: 1rem;
+  }
+
+  .left-arrow {
+    height: 6rem;
+  }
+
+  .bottom-container {
+    top: 8rem;
+    left: 35rem;
+  }
+
+  .bottom-arrow {
+    height: 4rem;
+  }
+
+  .team-content-title {
+    margin-top: 4rem;
+  }
+
+  .team-content-title h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+}
+

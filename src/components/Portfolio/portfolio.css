@@ -1,0 +1,69 @@
+.portfolio-section {
+    min-height: 100vh;
+    background: url('/home/BG.png') no-repeat center center/cover;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.1rem;
+}
+
+.portfolio-header {
+    margin-top: 3rem;
+}
+
+.portfolio-header h1 {
+    margin-bottom: 0;
+}
+
+.portfolio-content {
+    width: 44%;
+}
+
+.portfolio-grp {
+    position: relative;
+}
+
+
+.main-left-rectangle {
+    position: absolute;
+    top: 3.9rem;
+    height: 15.7rem;
+    left: 1rem;
+}
+
+.main-right-rectangle {
+    position: absolute;
+    top: 3.9rem;
+    height: 15.7rem;
+    right: 1rem;
+}
+
+.main-left-arrow {
+    position: absolute;
+    top: 9rem;
+    left: 1.6rem;
+    height: 6rem;
+}
+
+.main-right-arrow {
+    position: absolute;
+    top: 9rem;
+    right: 1.6rem;
+    height: 6rem;
+}
+
+.cam-group {
+    position: absolute;
+    top: 8rem;
+    left: 8rem;
+    height: 22rem;
+}
+
+.portfolio-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 25rem;
+}

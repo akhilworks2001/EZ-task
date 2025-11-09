@@ -1,0 +1,256 @@
+.team-section {
+    text-align: center;
+    min-height: 100vh;
+    background: url('home/BG.png') no-repeat center center/cover;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Decorative images */
+  .note {
+    background: url('about/Group 9.png') no-repeat center center/contain;
+    width: 450px;
+    height: 55%;
+    position: absolute;
+    top: 0;
+    left: 120px;
+    z-index: 1000;
+  }
+  
+  .group {
+    background: url('about/Group 2.png') no-repeat center center/contain;
+    width: 450px;
+    height: 32rem;
+    position: absolute;
+    right: 12%;
+    bottom: 10%;
+  }
+  
+  /* Individual container */
+  .ind-container {
+    position: absolute;
+    height: 18rem;
+    bottom: 5%;
+    left: 3%;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  /* Arrows and text containers */
+  .right-container {
+    display: inline-block;
+    position: absolute;
+    top: 45%;
+    right: 41%;
+    text-align: center;
+  }
+  
+  .right-arrow {
+    height: 9rem;
+  }
+  
+  .right-text {
+    padding-right: 10rem;
+  }
+  
+  .bottom-container {
+    display: inline-block;
+    position: absolute;
+    top: 5.5rem;
+    right: 27%;
+    text-align: center;
+  }
+  
+  .bottom-arrow {
+    height: 4rem;
+  }
+  
+  .bottom-text {
+    padding-right: 6rem;
+  }
+  
+  .left-container {
+    display: inline-block;
+    position: absolute;
+    right: 4rem;
+    top: 12rem;
+    text-align: center;
+  }
+  
+  .left-arrow {
+    height: 5rem;
+  }
+  
+  .left-text {
+    margin-left: 3rem;
+  }
+  
+  /* Team content title */
+  .team-content-title {
+    position: absolute;
+    right: 10rem;
+    bottom: 5rem;
+  }
+  
+  .team-content-title button {
+    background-color: tomato;
+    border-radius: 30px;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  
+  /* Tablet responsiveness */
+  @media (max-width: 1024px) {
+    .note {
+      width: 300px;
+      height: 45%;
+      left: 50px;
+      top: 0;
+    }
+  
+    .group {
+      width: 300px;
+      height: 24rem;
+      right: 8%;
+      bottom: 8%;
+    }
+  
+    .ind-container {
+      height: 14rem;
+      bottom: 4%;
+      left: 2%;
+    }
+  
+    .right-container,
+    .bottom-container,
+    .left-container {
+      top: auto;
+      bottom: auto;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 0;
+    }
+  
+    .right-arrow,
+    .bottom-arrow,
+    .left-arrow {
+      height: 6rem;
+    }
+  
+    .right-text,
+    .bottom-text,
+    .left-text {
+      padding: 0;
+      margin: 0.5rem 0 0 0;
+    }
+  
+    .team-content-title {
+      position: relative;
+      right: auto;
+      bottom: auto;
+      margin-top: 2rem;
+    }
+  
+    .team-content-title button {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+  }
+  
+  /* Mobile responsiveness */
+  @media (min-width: 768px) {
+    .note {
+      width: 200px;
+      height: 35%;
+      left: 20px;
+    }
+  
+    .group {
+      width: 200px;
+      height: 16rem;
+      right: 5%;
+      bottom: 5%;
+    }
+  
+    .ind-container {
+      height: 10rem;
+      bottom: 3%;
+      left: 2%;
+    }
+  
+    .right-arrow,
+    .bottom-arrow,
+    .left-arrow {
+      height: 4rem;
+    }
+  
+    .team-content-title h2 {
+      font-size: 1.2rem;
+      padding: 0 1rem;
+    }
+  
+    .team-content-title button {
+      font-size: 0.7rem;
+      padding: 5px 10px;
+    }
+  }
+  
+  /* Floating animation for arrows */
+@keyframes floatUpDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Apply animations to arrows */
+.right-arrow {
+  background: url('about/Vector.svg') no-repeat center center/contain;
+  height: 9rem;
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+.bottom-arrow {
+  background: url('about/Vector (1).svg') no-repeat center center/contain;
+  height: 4rem;
+  animation: floatUpDown 2.5s ease-in-out infinite;
+}
+
+.left-arrow {
+  background: url('about/Vector (2).svg') no-repeat center center/contain;
+  height: 5rem;
+  animation: floatUpDown 3.5s ease-in-out infinite;
+}
+
+/* Optional: Add slight hover scale effect */
+.right-arrow:hover,
+.bottom-arrow:hover,
+.left-arrow:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Tablet & mobile adaptations */
+@media (max-width: 1024px) {
+  .right-arrow, .bottom-arrow, .left-arrow {
+    animation: floatUpDown 2.5s ease-in-out infinite;
+    height: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .right-arrow, .bottom-arrow, .left-arrow {
+    animation: floatUpDown 2s ease-in-out infinite;
+    height: 4rem;
+  }
+}

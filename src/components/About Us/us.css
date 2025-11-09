@@ -1,0 +1,122 @@
+.us-section {
+    text-align: center;
+    min-height: 100vh;
+    background: url('home/BG.png') no-repeat center center/cover;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+    padding: 0 2rem;
+}
+
+.detail-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 8rem;
+}
+.projects {
+    height: 14rem;
+    position: absolute;
+    left: 7rem;
+}
+
+.clients {
+    position: absolute;
+    left: 15rem;
+    height: 14rem;
+}
+
+.team {
+    height: 14rem;
+    position: absolute;
+    left: 24rem;
+}
+
+
+.context-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.context-section h1{
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    margin-bottom: 18rem;
+}
+
+
+.brand-sction {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    bottom: 0;
+    height: 21rem;
+    right: 0;
+}
+
+.mountain {
+    position:absolute;
+    bottom: 0;
+    right: 8rem;
+    height: 14rem;
+
+}
+
+@media (max-width: 1024px) {
+    .us-section {
+        padding-top: 4rem;
+        flex-direction: column;
+    }
+    .projects { left: 5rem; height: 12rem; }
+    .clients { left: 11rem; height: 12rem; }
+    .team { left: 17rem; height: 12rem; }
+  
+    .context-section h1 { font-size: 1.3rem; margin-bottom: 10rem; }
+  
+    .logo { height: 16rem; right: 1rem; }
+    .mountain { height: 10rem; right: 4rem; }
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .detail-section {
+      position: static; /* Stack images vertically */
+      flex-direction: column;
+      margin-bottom: 4rem;
+    }
+  
+    .projects,
+    .clients,
+    .team {
+      position: relative;
+      left: auto;
+      height: 10rem;
+    }
+  
+    .context-section h1 {
+      font-size: 1.2rem;
+      margin-bottom: 4rem;
+      padding: 0 1rem;
+    }
+  
+    .brand-section {
+      position: static;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo { position: relative; height: 12rem; right: auto; bottom: auto; }
+    .mountain { position: relative; height: 8rem; right: auto; bottom: auto; }
+  }

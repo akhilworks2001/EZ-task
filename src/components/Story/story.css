@@ -1,7 +1,7 @@
 .story-section {
     text-align: center;
     min-height: 100vh;
-    background: url('home/BG.png') no-repeat center center/cover;
+    background: url('/home/BG.png') no-repeat center center/cover;
     box-sizing: border-box;
     position: relative;
     display: flex;
